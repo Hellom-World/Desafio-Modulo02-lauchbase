@@ -1,0 +1,126 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap";
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    font-family: roboto;
+    color: white;
+    background-image: url("https://c.wallhere.com/photos/7c/39/Adventure_Time_cartoon-107037.jpg!d") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+       
+}
+
+.link-home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 30px;
+    margin: auto;
+    padding: 5px;
+}
+.link-home a{
+    
+    font-family: roboto ;
+    font-size: 20px;
+    margin: 0 32px;
+    color: rgb(158, 79, 231);
+    text-decoration: none;
+}
+.link-home a:hover{
+    color: white;
+    transition: 200ms;
+}
+header{
+
+    padding: 10px 150px;
+    background: rgba(6, 9, 10, 0.65);
+    border-bottom: 1px solid #333;
+}
+.links{
+    align-items: center;
+    max-width: 600px;
+    line-height: 30px;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+}
+.links a{
+
+    font-family: roboto ;
+    font-size: 18px;
+    margin: 0 32px;
+    color: rgb(158, 79, 231);
+    text-decoration: none;
+}
+.footer{
+    background-color: rgba(6, 9, 10, 0.5);
+    padding-bottom: 15px;
+}
+#footer{
+    margin-top: 3%;
+    padding: 0;
+}
+#footer a{
+    font-size: 20px;
+    font-style: inherit;
+    color: black;
+    border-bottom: 1px solid white;
+}
+
+#footer a:hover{
+    color: rgb(255, 255, 255);
+    transition: 200ms;
+ 
+}
+#footer a img{
+    height: 70px;
+} 
+.links a:hover{
+    color: white;
+    transition: 200ms;
+}
+
+.content{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 2%;
+}
+.content h1{
+    font-size: 40px;
+    
+}
+.content p{
+    font-size: 18px;
+    margin: 10px auto;
+    max-width: 600px;
+    line-height: 30px;
+}
+.content img{
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid rgb(229, 255, 0);
+}
+.lista{
+    display:inline;
+    max-width: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+.lista h2{
+    margin-bottom: 2%;
+}
+.lista ul{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+}
+.lista ul li{
+    margin: 0 10px;
+    display: inline;
+}
+.lista ul li img{
+    height: 70px;
+}
