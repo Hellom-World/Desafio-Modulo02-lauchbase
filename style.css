@@ -1,15 +1,16 @@
-@import "https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap;";
 *{
     margin: 0;
     padding: 0;
     border: 0;
 }
 body{
-    font-family: roboto;
+    font-family: Roboto;
     color: white;
     background-image: url("https://c.wallhere.com/photos/7c/39/Adventure_Time_cartoon-107037.jpg!d") ;
     background-repeat: no-repeat;
     background-size: cover;
+    
        
 }
 
@@ -123,4 +124,90 @@ header{
 }
 .lista ul li img{
     height: 70px;
+}
+
+/* CARD CURSOS */
+
+.cards-curso{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 700px;
+
+    
+
+}
+.curso{
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(6, 9, 10, 0.9);
+    border: 1px solid #333;
+    color: #333;
+
+    padding: 50px;
+    height: 550px;
+    max-width: 350px;
+    margin-top: 5vh;
+}
+.curso.um:hover{
+    transition: 200ms;
+    margin-top: 30px;
+    border-color: rgb(158, 79, 231);
+}
+.curso.dois:hover{
+    transition: 200ms;
+    margin-top: 30px;
+    border-color:rgb(253, 149, 31);
+}
+.curso.tres:hover{
+    transition: 200ms;
+    margin-top: 30px;
+    border-color: rgb(4, 211, 97);
+}    
+.curso-image{
+    
+    margin-top: 30%;
+}
+.curso span{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    border-image: initial;
+}
+.curso .span01{
+    color: rgb(113, 89, 193);
+}
+.curso .span02{
+    color: rgb(253, 149, 31);;
+}
+.curso .span03{
+    color: rgb(4, 211, 97);
+}
+.curso-info{
+    color: rgb(104, 95, 95);
+    font-size: 18px;
+}
+.curso-info .modulos{
+    margin-top: 5vh;
+    color:rgb(187, 181, 181);
+}
+.modulos .st01{
+    color: rgb(158, 79, 231);
+}
+.modulos .st02{
+    color: rgb(253, 149, 31);
+}
+.modulos .st03{
+    color: rgb(4, 211, 97);
 }
