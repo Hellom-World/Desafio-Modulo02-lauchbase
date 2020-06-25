@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cursos</title>
     <link rel="shortcut icon" href="https://www.hobbynews.com.br/gallery_gen/c454830c7a07608d884888125d13d763_200x200.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,7 +22,7 @@
 
     <div class="cards-curso">
 
-      <div class="curso um">
+      <div class="curso um" id="starter">
         <span class="span01">01</span>
         <div class="curso-image">
           <img src="https://skylab.rocketseat.com.br/static/media/Starter.64c237cc.svg" alt="">
@@ -37,7 +38,7 @@
         </div>
       </div>
 
-      <div class="curso dois">
+      <div class="curso dois" id="Launchbase">
         <span class="span02">02</span>
         <div class="curso-image">
           <img src="https://skylab.rocketseat.com.br/static/media/LaunchBase.08285320.svg" alt="">
@@ -53,7 +54,7 @@
         </div>
       </div>
 
-      <div class="curso tres">
+      <div class="curso tres" id="gostack">
         <span class="span03">03</span>
         <div class="curso-image">
           
@@ -68,11 +69,25 @@
           </p>
           <p class="modulos"> 50 Módulos </p>
         </div>
+      </div>
+    </div>
 
+      
+    <div class="modal-overlay">
+      <div class="modal maximize">
+          <a class="close-modal">
+              <span class="material-icons">close</span>
+          </a>
+          <a class="max">
+            <span class="material-icons">photo_library</span>
+          </a>
+          <div class="modal-content">
+              <iframe src="" frameborder="0"></iframe>
+          </div>
       </div>
     </div>
 
   </section>
-
+  <script src="scripts.js"></script>
 </body>
 </html>

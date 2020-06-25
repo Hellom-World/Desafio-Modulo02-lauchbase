@@ -211,3 +211,74 @@ header{
 .modulos .st03{
     color: rgb(4, 211, 97);
 }
+
+/* ===Modal=== */
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{
+    background-color: white;
+
+    width: 80%;
+    height: 80%;
+    margin: 10vh auto;
+
+    border-radius: 5px;
+
+    position: relative; /* Ele faz com que ele respeite a div-filho com posição absoluta */
+}
+.modal .close-modal{
+    color: black;
+
+    position: absolute;
+    right: 3px;
+    top: 3px;
+
+    cursor: pointer;
+}
+.modal .max{
+    color: black;
+
+    position: absolute;
+    right: 30px;
+    top: 3px;
+    
+
+    cursor: pointer;
+}
+/* == Modal.Maximize */
+
+.modal.maximize{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 0;
+    left: 0;
+        
+}
+
+/* == Modal.ACTIVE == */
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+section{
+    position: relative;
+}
+iframe{
+    width: 99.8%;
+    height: 92%;
+    position: absolute;
+    top: 4%;
+    left: 0.2%;
+    
+
+}
