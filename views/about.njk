@@ -1,22 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rocketseat</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="link-home">
-            <a href="index.html">Sobre</a>
-            <a href="conteudo.html">Conteúdo</a>
-            <a href="http://discordapp.com/invite/gCRAFhc" target="_blank">Comunidade</a>
-            <a href=  "mailto: oi@rocketseat.com.br"  target="_blank">Email</a>
-            <a href="tel: +5547992078767"target="_blank">Telefone</a>
-        </div>
-    </header>  
-    
+{% extends "layout.njk"%}
+
+{% block content %}
     <div class="content">
         <img src="https://cdn-images-1.medium.com/max/1200/1*TkXVfLTwsHdwpUEjGzdi9w.jpeg" alt="">
         <h1>🚀 Rocketseat</h1>
@@ -35,10 +19,9 @@
     </div>
     <section class="footer">
         <div id="footer" class="links">
-            <a href="https://www.facebook.com/rocketseat/" target="_blank"><img src="/icones/icone-face.svg" alt=""></a>
-            <a href=  "https://www.instagram.com/rocketseat_oficial" target="_blank" ><img src="/icones/icone-insta.svg" alt=""></a>
-            <a href="https://github.com/Rocketseat"target="_blank" ><img style="height: 40px;" src="/icones/icone-git.svg" alt=""></a>
+            <a href="https://www.facebook.com/rocketseat/" target="_blank"><img src="/icones/icone-face.svg" alt="face"></a>
+            <a href=  "https://www.instagram.com/rocketseat_oficial" target="_blank" ><img src="/icones/icone-insta.svg" alt="insta"></a>
+            <a href="https://github.com/Rocketseat"target="_blank" ><img style="height: 40px;" src="/icones/icone-git.svg" alt="git"></a>
         </div>
     </section>
-</body>
-</html>
+{% endblock %}

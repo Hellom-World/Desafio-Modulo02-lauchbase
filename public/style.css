@@ -57,6 +57,7 @@ header{
     text-decoration: none;
 }
 .footer{
+    position: fixed bottom;
     background-color: rgba(6, 9, 10, 0.5);
     padding-bottom: 15px;
 }
@@ -141,6 +142,9 @@ header{
 
 }
 .curso{
+    display: grid;
+    align-items: center;
+
     cursor: pointer;
     text-align: center;
     border-radius: 10px;
@@ -173,6 +177,8 @@ header{
     margin-top: 30%;
 }
 .curso span{
+    margin: 0 auto;
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -277,8 +283,16 @@ iframe{
     width: 99.8%;
     height: 92%;
     position: absolute;
-    top: 4%;
+    top: 5%;
     left: 0.2%;
     
 
+}
+
+/* pagina not-found */
+
+.not-found{
+    height: 91vh;
+    width: 100%;
+    margin: 0 auto;
 }

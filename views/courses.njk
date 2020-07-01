@@ -1,0 +1,44 @@
+{% extends "layout.njk"%}
+
+{% block content %}  
+  <section class="cursos">
+
+    <div class="cards-curso">
+
+      {% for item in itens%}
+      <div class="curso um" id="{{item.id}}">
+        
+        <span class="span{{item.span}}">{{item.span}}</span>
+        <div class="item-image">
+          <img src="{{item.image_url}}" alt="">
+          <p> {{item.price}} </p>
+        </div>
+       
+
+        <div class="item-info">
+          <p class="modulos">{{item.description}}</p>
+        </div>
+
+        <div class="item-info">
+            <p class="modulos">{{item.duration}}</p>
+        </div>
+
+      </div>
+      {% endfor%}
+    </div>
+
+      
+    <div class="modal-overlay">
+      <div class="modal maximize">
+          <a class="close-modal">
+              <span class="material-icons">close</span>
+          </a>
+          <a class="max">
+            <span class="material-icons">photo_library</span>
+          </a>
+          <div class="modal-content">
+              <iframe src="" frameborder="0"></iframe>
+          </div>
+      </div>
+    </div>
+{% endblock %}
