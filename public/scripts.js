@@ -5,18 +5,16 @@ for(let curso of cards){
     curso.addEventListener('click', function(){
         const embed = curso.getAttribute('id')
 
-        modalOverlay.classList.add('active')
-        modal.classList.remove('maximize')
 
-        modalOverlay.querySelector('iframe').src = `https://rocketseat.com.br/${embed}`
+    //Se quiser buscar as páginas explicativas da rocketseat é só usar o codigo abaixo:
+    /* window.location.href = `https://rocketseat.com.br/${embed}` */
+    
+    //Se quiser buscar as páginas nativas é só usar o codigo abaixo:
+    window.location.href = `/${embed}`
+
     })
 }
 
-document.querySelector('.close-modal').addEventListener('click', function(){
-    modalOverlay.classList.remove('active')
-    modal.classList.remove('maximize')
-    modalOverlay.querySelector('iframe').src = ""
-})
 
 const maximize = document.querySelector('.max')
 const modal = document.querySelector('.modal')

@@ -10,6 +10,7 @@ body{
     background-image: url("https://c.wallhere.com/photos/7c/39/Adventure_Time_cartoon-107037.jpg!d") ;
     background-repeat: no-repeat;
     background-size: cover;
+
     
        
 }
@@ -95,6 +96,7 @@ header{
     
 }
 .content p{
+    text-align: justify;
     font-size: 18px;
     margin: 10px auto;
     max-width: 600px;
@@ -289,10 +291,18 @@ iframe{
 
 }
 
-/* pagina not-found */
+/* pagina not-found erro 404 */
 
 .not-found{
+    display: flex;
     height: 91vh;
-    width: 100%;
+    max-width: 900px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
     margin: 0 auto;
+    max-width: 900px;
 }
